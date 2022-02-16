@@ -13,23 +13,23 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-/* QWERTY
+/* Colemak-DH
  *
  * ,----------------------------------.                      ,----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |                      |   Y  |   U  |   I  |   O  |   P  |
+ * |   Q  |   W  |   F  |   P  |   B  |                      |   J  |   L  |   U  |   Y  |   ;  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * |   A  |   R  |   S  |   T  |   G  |                      |   H  |   J  |   K  |   L  |   ;  |
+ * |   A  |   R  |   S  |   T  |   G  |                      |   M  |   N  |   E  |   I  |   O  |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * |   Z  |   X  |   C  |   V  |   B  |  |  2  |    |  3  |  |   N  |   M  |   ,  |   .  |   /  |
+ * |   Z  |   X  |   C  |   D  |   V  |  |  2  |    |  3  |  |   K  |   H  |   ,  |   .  |   /  |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *          ,-----.   ,--------------------.            ,--------------------.   ,-----. 
- *          |  1  |   | DEL | SPACE | TAB  |            |  ESC  | BS | ENTER |   |  4  |	
+ *          |  1  |   | DEL | SPACE | TAB  |            | TO(0) | BS | ENTER |   |  4  |
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&kp Q       &kp W 	   &kp E       &kp R       &kp T            &kp Y   &kp U        &kp I       &kp O      &kp P
-	&mt LGUI A  &mt LALT R &mt LCTRL S &mt LSHFT T &kp G            &kp H   &mt LSHFT J  &mt LCTRL K &mt LALT L &mt LGUI SEMI
-	&kp Z       &kp X      &kp C       &kp V       &kp B       		&kp N   &kp M        &kp COMMA   &kp DOT    &kp FSLH
+	&kp Q       &kp W 	   &kp F       &kp P       &kp B            &kp J   &kp L        &kp U       &kp Y      &kp SEMI
+	&kp A  &mt LALT R &mt LCTRL S &mt LSHFT T      &kp G            &kp M   &mt LSHFT N  &mt LCTRL E &mt LALT I &kp O
+	&kp Z       &kp X      &kp C       &mt LGUI D  &kp V       		&kp K   &mt LGUI H   &kp COMMA   &kp DOT    &kp FSLH
 	&kp N1      &lt 3 DEL  &lt 1 SPACE &kp TAB     &kp N2      		&kp N3  &kp ESC      &kp BSPC    &lt 2 RET  &kp N4
 			>;
 

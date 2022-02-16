@@ -2,9 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: JW2586      
+      url-base: https://github.com/JW2586
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: JW2586
       revision: main
       import: app/west.yml
   self:

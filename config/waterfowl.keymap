@@ -180,8 +180,18 @@
         };
 		combo_F2 {
             timeout-ms = <50>;
-            key-positions = <10 14>;
+            key-positions = <20 24>;
             bindings = <&kp F2>;
+        };
+		combo_F3 {
+            timeout-ms = <50>;
+            key-positions = <5 9>;
+            bindings = <&kp F3>;
+        };
+		combo_F4 {
+            timeout-ms = <50>;
+            key-positions = <25 29>;
+            bindings = <&kp F4>;
         };
     };
 };

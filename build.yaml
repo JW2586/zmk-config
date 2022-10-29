@@ -15,5 +15,5 @@
 include:
     - board: draculady
       shield: draculady_left
-    - board: draculady_v2
+    - board: draculady
       shield: draculady_right

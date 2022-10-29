@@ -5,7 +5,7 @@ manifest:
     - name: JW2586      
       url-base: https://github.com/JW2586
   projects:
-    - name: zmk
+    - name: MangoIV-zmk
       remote: JW2586
       revision: main
       import: app/west.yml

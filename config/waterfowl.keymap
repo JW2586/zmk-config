@@ -102,7 +102,7 @@
 			bindings = <
 	&kp PRCNT	&kp AT		&kp LBKT	&kp RBKT	&kp NON_US_BSLH			&trans			&trans		&kp CARET					&trans		&trans
 	&kp HASH	&kp EXCL	&kp LPAR	&kp RPAR	&kp PIPE						&kp UNDER		&kp APOS	&kp DOUBLE_QUOTES	&kp TILDE	&kp GRAVE
-	&kp DLLR	&trans		&kp LBRC	&kp RBRC	&kp AMPS						&trans			&trans		&trans						&trans		&trans
+	&kp DLLR	&zed_em_kay		&kp LBRC	&kp RBRC	&kp AMPS						&trans			&trans		&trans						&trans		&trans
 	&trans		&mo 1			&kp SPACE	&kp TAB		&kp CLCK						&kp KP_NLCK	&trans		&kp BSPC					&mo 2		&trans
 			>;
 
@@ -160,6 +160,23 @@
 						layers = <0>;
             key-positions = <5 9>;
             bindings = <&to 0>;
+        };
+    };
+};
+
+/ {
+    macros {
+        zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+			tap-ms = <40>;
+			bindings
+				= <&macro_press   &kp LALT>
+				, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+				, <&macro_release &kp LALT>
+				;
         };
     };
 };

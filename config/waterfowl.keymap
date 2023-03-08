@@ -151,13 +151,11 @@
         compatible = "zmk,combos";
         combo_game {
             timeout-ms = <50>;
-						layers = <0>;
             key-positions = <0 4>;
             bindings = <&to 4>;
         };
 				combo_base {
             timeout-ms = <50>;
-						layers = <0>;
             key-positions = <5 9>;
             bindings = <&to 0>;
         };

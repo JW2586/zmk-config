@@ -2,4 +2,4 @@
 
 CyanDuck's personal repo for my zmk keymaps.
 
-![keymap diagram](Oneshot-mods-keymap.svg)
+![keymap diagram](New-34-keymap.svg)

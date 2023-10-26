@@ -2,11 +2,9 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: MangoIV      
-      url-base: https://github.com/MangoIV
   projects:
     - name: zmk
-      remote: MangoIV
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:

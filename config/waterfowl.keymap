@@ -29,7 +29,7 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&ext_power EP_ON		&ext_power EP_OFF		&kp F			&kp P		&kp B									&kp J				&kp L		&kp U			&kp Y		&kp SEMI
+	&kp Q		&kp W		&kp F			&kp P		&kp B									&kp J				&kp L		&kp U			&kp Y		&kp SEMI
 	&kp A		&kp R		&kp S			&kp T		&kp G									&kp M				&kp N		&kp E			&kp I		&kp O
 	&kp Z 	&kp X		&kp C			&kp D		&kp V									&kp K				&kp H		&kp COMMA	&kp DOT	&kp FSLH
 	&trans	&mo 1		&kp SPACE	&kp TAB	&kp CLCK							&kp KP_NLCK	&trans	&kp BSPC	&mo 2		&trans
@@ -66,9 +66,9 @@
 /* NAV
  *
  * ,----------------------------------.                      ,----------------------------------.
- * |  ESC | PgUp |  UP  | PgDn |      |                      |      |  F4  |  F5  |  F6  |      |
+ * |  ESC | PgUp |  UP  | PgDn |      |                      | D_ON |  F4  |  F5  |  F6  |      |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * | Home | Left | Down | Right| End  |                      |      | SHIFT| CTRL |  ALT | WIN  |
+ * | Home | Left | Down | Right| End  |                      |D_OFF | SHIFT| CTRL |  ALT | WIN  |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
  * | BTCLR| BT 0 | BT 1 | BT 2 | BT 3 |  |CPSLK|    |NUMLK|  |      |  F1  |  F2  |  F3  | RET  |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
@@ -77,8 +77,8 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
 			bindings = <
-	&kp ESC			&kp PG_UP			&kp UP				&kp PG_DN			&trans							&trans			&kp F4			&kp F5		&kp F6		&trans
-	&kp HOME		&kp LEFT			&kp DOWN			&kp RIGHT			&kp END							&trans			&kp LSHIFT	&kp LCTRL	&kp LALT	&kp LGUI
+	&kp ESC			&kp PG_UP			&kp UP				&kp PG_DN			&trans							&ext_power EP_ON			&kp F4			&kp F5		&kp F6		&trans
+	&kp HOME		&kp LEFT			&kp DOWN			&kp RIGHT			&kp END							&ext_power EP_OFF			&kp LSHIFT	&kp LCTRL	&kp LALT	&kp LGUI
 	&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3				&trans			&kp F1			&kp F2		&kp F3		&kp RET
 	&trans			&mo 1					&kp SPACE			&kp TAB				&kp CLCK						&kp KP_NLCK	&trans			&kp BSPC	&mo 2			&trans
 			>;
